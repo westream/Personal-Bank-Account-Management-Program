@@ -3,7 +3,7 @@
 A simple personal bank account management program
 ## treasure :  
 >>1. 有用的计算时间的类data  
->>> 建立：Date date(2008, 11, 1);	//起始日期  
+>>> 建立：Date date(2008, 11, 1);   
 >>> 显示：date.show()  
 >>> 间隔：date.distance(Date(2020, 1, 1));  
 
