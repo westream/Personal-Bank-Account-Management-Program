@@ -1,11 +1,11 @@
 # Personal-Bank-Account-Management-Program  
 ## Abstract  
 A simple personal bank account management program
-## treasure :
->>1. 有用的计算时间的类data
->>> 建立：Date date(2008, 11, 1);	//起始日期
->>> 显示：date.show()
->>> 间隔：date.distance(Date(2020, 1, 1));
+## treasure :  
+>>1. 有用的计算时间的类data  
+>>> 建立：Date date(2008, 11, 1);	//起始日期  
+>>> 显示：date.show()  
+>>> 间隔：date.distance(Date(2020, 1, 1));  
 
 ### date.h
 ```cpp
@@ -79,13 +79,29 @@ void Date::show() const {
 
 ```
 
->>2. 四舍五入的方法
+>>2. 四舍五入的方法    
 
 ```cpp
 
 #include <cmath>
+amount = floor(amount * 100 + 0.5) / 100;	//保留小数点后两位
 
+```
 
+>>3. 构造函数的执行顺序  
+>>> 函数实际调用时，函数原型开始，实参赋值形参，然后形参赋值给参数表中的类的数据成员。  
 
+```cpp
+Line::Line( double len): length(len)
+{
+    cout << "Object is being created, length = " << len << endl;
+}
+
+// 等价于下面的写法
+Line::Line( double len)
+{
+    length = len;
+    cout << "Object is being created, length = " << len << endl;
+}
 
 ```
